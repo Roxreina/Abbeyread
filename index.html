@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuadernos artesanales hechos a mano con diseños únicos y materiales sostenibles.">
+    <title>Tienda online Abbeyreadcuadernos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="img/logo.jpg" alt="Logo" class="logo">
+            <h1>Cuadernos Artesanales</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Bienvenidos a Abbeyreadcuadernos</h2>
+                <p>Explora nuestros cuadernos hechos a mano, cada uno diseñado con amor y dedicación. Perfectos para escribir tus pensamientos, planes y recuerdos.</p>
+            </article>
+            <aside>
+                <h3>Oferta del Mes</h3> 
+                <p>Obtén un 10% de descuento en tu primera compra usando el código <strong>BIENVENIDA10</strong></p>
+            </aside>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <img src="img/cuaderno1.jpg" alt="Cuaderno artesanal 1">
+                    <div class="contenido-tarjeta">
+                        <p class="descripcion">Cuaderno Brotes</p>
+                        <p class="precio">$ 9600.00</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/cuaderno2.jpg" alt="Cuaderno artesanal 2">
+                    <div class="contenido-tarjeta">
+                        <p class="descripcion">Cuaderno Horizonte</p>
+                        <p class="precio">$ 9400.00</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/cuaderno3.jpg" alt="Cuaderno artesanal 3">
+                    <div class="contenido-tarjeta">
+                        <p class="descripcion">Cuaderno Pinky</p>
+                        <p class="precio">$ 8500.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" >
+            <div class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <article>
+                <p>Somos una pequeña empresa dedicada a la fabricación de cuadernos artesanales utilizando técnicas tradicionales y materiales sostenibles. Cada cuaderno es único y hecho con especial cuidado para ofrecer un producto de alta calidad.</p>
+            </article>
+        </div>
+        </section>
+        <section id="formulario-contacto" class="contacto-contenedor">
+                <div class="contacto-formulario">
+                <form action="https://formspree.io/f/mldedplv" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+        
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                <div class="contacto-info">
+                    <p>¡Estamos aquí para ayudarte! Si tienes preguntas sobre nuestros cuadernos artesanales, no dudes en contactarnos. Nuestro equipo está listo para responder cualquier consulta que puedas tener. Ya sea que necesites información sobre nuestros productos, precios o disponibilidad, estaremos encantados de asistirte. Esperamos tu mensaje y agradecemos tu interés en nuestros cuadernos.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <div class="footer-contenedor">
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <address>
+                <p>Email: contacto@Abbeyreadcuadernos.com</p>
+                <p>Teléfono: 1161815593</p>
+                <p>Dirección: No existe 123, El Palomar, Bs. As.</p>
+            </address>
+        </section>
+        <div class="mapa">
+            <h2>Nuestra Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52542.237040530956!2d-58.61956966627245!3d-34.60694764295769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1ses-419!2sar!4v1726839755219!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        <p class="copyright">&copy; <time datetime="2024">2024</time> Abbeyreadcuadernos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
