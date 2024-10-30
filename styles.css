@@ -54,6 +54,13 @@ main {
     margin: 20px;
 }
 
+section {
+    background: linear-gradient(to bottom, #375235, #5cb85c); /* De verde oscuro a verde medio */
+    padding: 20px; /* Opcional, para agregar algo de espacio interno */
+    color: #ffffff; /* Cambia el color del texto si es necesario */
+    margin: 20px 0; /* Margen superior e inferior */
+    border-radius: 5px; /* Bordes redondeados */
+}
 h2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5em;
