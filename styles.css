@@ -7,8 +7,8 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
     line-height: 1.6;
+    color: #333333;
 }
 
 header {
@@ -56,8 +56,8 @@ main {
 
 section {
     background: linear-gradient(to bottom, #375235, #5cb85c); /* De verde oscuro a verde medio */
-    padding: 20px; /* Opcional, para agregar algo de espacio interno */
-    color: #ffffff; /* Cambia el color del texto si es necesario */
+    padding: 20px; /* algo de espacio interno */
+    color: #ffffff; /* color del texto */
     margin: 20px 0; /* Margen superior e inferior */
     border-radius: 5px; /* Bordes redondeados */
 }
@@ -108,10 +108,12 @@ aside {
     font-size: 1.2em;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #333333;
 }
 
 .precio {
-    font-size: 1.5em;
+    font-size: .8em;
+    font-weight: bold;
     color: #e74c3c;
 }
 
@@ -122,21 +124,16 @@ aside {
 }
 
 #formulario-contacto {
-    background-color: #f4f4f4; /* Fondo claro para el formulario */
     padding: 20px; /* Espaciado interno */
     margin: 20px 0; /* Margen superior e inferior */
     border-radius: 5px; /* Bordes redondeados */
-}
-
-#formulario-contacto h2 {
-    margin-bottom: 15px; /* Margen inferior del título */
 }
 
 form {
     display: flex;
     flex-direction: column; /* Disposición en columna */
     flex: 1; /* Dejar que el formulario ocupe espacio disponible */
-    margin-right: 20px; /* Margen entre el formulario y la info */
+    margin-right: 15px; /* Margen entre el formulario y la info */
 }
 
 label {
@@ -144,8 +141,10 @@ label {
     font-weight: bold; /* Negrita para las etiquetas */
 }
 
-input[type="text"],
-input[type="email"],
+input[type="email"]:hover {
+    background-color: #f1f1bd; /* Color del botón al pasar el ratón */
+}
+
 textarea {
     padding: 1px; /* Espaciado interno */
     margin-bottom: 10px; /* Margen inferior */
@@ -184,9 +183,10 @@ button:hover {
 
 .contacto-info {
     flex: 1; /* Dejar que la información ocupe espacio disponible */
-    background-color: #f4f4f4; /* Fondo claro para la información */
+    background-color: #dee6b1; /* Fondo claro para la información */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
+    color: #333333;
 }
 footer {
     background-color: #333;
