@@ -119,6 +119,45 @@ aside {
     color: #e74c3c;
 }
 
+#reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: grid; /* Usamos Grid solo para las reseñas */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Las reseñas se distribuyen en columnas */
+    gap: 20px; /* Espacio entre las reseñas */
+}
+
+#reviews h2 {
+    grid-column: 1 / -1; /* Hace que el título ocupe toda la fila */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.review {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+.review-text {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff9900;
+}
+
 .nosotros{
     border-radius: 5px;
     background-color: #aca56c;
