@@ -18,7 +18,8 @@ El proyecto está dividido en dos archivos principales:
 
 - **Header**: Contiene el logotipo y el título de la página, junto con un menú de navegación.
 - **Sección de inicio**: Breve descripción de la empresa y un aviso promocional.
-- **Sección de productos**: Incluye un contenedor con tres tarjetas de producto, cada una con una imagen, descripción y precio.
+- **Sección de productos**: Incluye un contenedor con tarjetas de producto, cada una con una imagen, descripción y precio.
+- **Sección de reseñas**: Incluye contenedores con reseñas de clientes, y valoracion con imagen de estrellas.
 - **Sección sobre nosotros**: Texto que describe la misión y visión de la empresa.
 - **Footer**: Información de contacto y derechos reservados.
 
