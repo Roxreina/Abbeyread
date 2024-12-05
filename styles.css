@@ -35,19 +35,20 @@ header h1 {
     font-size: 2.5em;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
-    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Animación suave */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link {
+    letter-spacing: 1px; /* Ajusta el valor según lo que necesites */
+}
+
+nav a:hover {
+    color: white; /* Color al hacer hover */
+    background-color: #7ecf97; /* Fondo al hacer hover */
+    border-radius: 5px; /* Opcional para dar un estilo más moderno */
 }
 
 main {
@@ -130,7 +131,7 @@ aside {
 #reviews h2 {
     grid-column: 1 / -1; /* Hace que el título ocupe toda la fila */
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
 }
