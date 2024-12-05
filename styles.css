@@ -80,44 +80,42 @@ aside {
     text-align: center;
 }
 
-.contenedor-tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0;    
+/* Estilo general de la lista de productos */
+.producto-list {
+    display: flex;             /* Usamos flexbox */
+    flex-wrap: wrap;           /* Permite que los productos se acomoden en varias filas */
+    gap: 20px;                 /* Espacio entre las tarjetas */
+    padding: 0;
+    list-style-type: none;
 }
 
-.tarjeta {
-    background-color: #fff;
+  /* Estilo de cada tarjeta de producto */
+.producto-item {
+    width: 200px;              /* Ancho fijo de la tarjeta */
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 20rem;
+    background-color: #fff;
     text-align: center;
 }
 
-.tarjeta img {
+  /* Estilo de las imágenes dentro de las tarjetas */
+.producto-item img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
-.contenido-tarjeta {
-    padding: 15px;
+  /* Títulos y precios */
+.producto-item h2 {
+    margin: 10px 0;
+    color: rgb(70, 66, 66);
 }
-
-.descripcion {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.producto-item p {
     font-weight: bold;
-    color: #333333;
-}
-
-.precio {
-    font-size: .8em;
-    font-weight: bold;
-    color: #e74c3c;
+    color: brown;
 }
 
 #reviews {

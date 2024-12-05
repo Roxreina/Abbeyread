@@ -39,10 +39,36 @@
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
-            <div class="contenedor-tarjetas">
-                <script src="productos.json"></script>
+            <div class="producto-list">
                 
-            </div>
+
+
+<ul id="lista-productos" class = "producto-item"></ul>
+
+<script>
+    // Definimos los productos directamente en el script
+    const productos = [
+    { nombre: "Cuaderno Brotes", imagen: "img/cuaderno1.jpg", precio: 9600 },
+    { nombre: "Cuaderno Horizonte", imagen: "img/cuaderno2.jpg", precio: 9400 },
+    { nombre: "Cuaderno Pinky", imagen: "img/cuaderno3.jpg", precio: 8500 },
+    { nombre: "Agenda de bolsillo", imagen: "agenda-bolsillo.jpg", precio: 7200 }
+    ];
+
+    // Obtenemos la lista del DOM
+    const lista = document.getElementById('lista-productos');
+
+    // Generamos el HTML dinámicamente
+    productos.forEach(producto => {
+    const item = document.createElement('li');
+    item.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}">
+        <h2 >${producto.nombre}  </h2>
+        <p >Precio: $${producto.precio}</p>
+    `;
+    lista.appendChild(item);
+    });
+</script>
+        </div>
         </section>
         <section id="reviews">
             <h2>Nuestros clientes</h2>

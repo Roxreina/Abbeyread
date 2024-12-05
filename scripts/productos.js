@@ -1,31 +1,28 @@
-// Función para cargar el archivo JSON y mostrar los productos
 
-console.log("Archivo JavaScript cargado correctamente"); 
+    // Definimos los productos directamente en el script
+    const productos = [
+      { nombre: "Cuaderno A5", imagen: "cuaderno-a5.jpg", precio: 1500 },
+      { nombre: "Cuaderno A4", imagen: "cuaderno-a4.jpg", precio: 2000 },
+      { nombre: "Planner 2024", imagen: "planner-2024.jpg", precio: 2500 },
+      { nombre: "Agenda de bolsillo", imagen: "agenda-bolsillo.jpg", precio: 1200 }
+    ];
 
-async function cargarProductos() {
-    try {
-    const respuesta = await fetch('productos.json');
-    if (!respuesta.ok) {
-        throw new Error(`Error al cargar el JSON: ${respuesta.statusText}`);
-    }
-    const productos = await respuesta.json();
-
-      // Mostrar los productos en la página
+    // Obtenemos la lista del DOM
     const lista = document.getElementById('lista-productos');
+
+    // Generamos el HTML dinámicamente
     productos.forEach(producto => {
-        const item = document.createElement('li');
-        item.innerHTML = `
-        <img src="${producto.imagen}" alt="${producto.imagen}" width="100" />
+      const item = document.createElement('li');
+      item.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}">
         <h2>${producto.nombre}</h2>
-        <p> $${producto.precio}</p>
-        `;
-        lista.appendChild(item);
+        <p>Precio: $${producto.precio}</p>
+      `;
+      lista.appendChild(item);
     });
 
-    } catch (error) {
-    console.error('Error:', error);
-    }
-}
-
-  // Ejecutar la función
-cargarProductos();
+    // También mostramos en la consola
+    productos.forEach(producto => {
+      console.log(`Nombre: ${producto.nombre}, Precio: $${producto.precio}`);
+    });
+ 
