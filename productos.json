@@ -1,0 +1,23 @@
+[
+    {
+      "nombre": "Cuaderno Brotes",
+      "imagen": "img/cuaderno1.jpg",
+      "precio": 9600.00
+    },
+    {
+      "nombre": "Cuaderno Horizonte",
+      "imagen": "img/cuaderno2.jpg",
+      "precio": 9400
+    },
+    {
+      "nombre": "Cuaderno Pinky",
+      "imagen": "img/cuaderno3.jpg",
+      "precio": 8500
+    },
+    {
+      "nombre": "Agenda de bolsillo",
+      "imagen": "agenda-bolsillo.jpg",
+      "precio": 1200
+    }
+  ]
+  
