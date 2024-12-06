@@ -42,13 +42,13 @@ nav a {
 }
 
 .nav-link {
-    letter-spacing: 1px; /* Ajusta el valor según lo que necesites */
+    letter-spacing: 1px; /* Ajusta el interletraje */
 }
 
 nav a:hover {
     color: white; /* Color al hacer hover */
     background-color: #7ecf97; /* Fondo al hacer hover */
-    border-radius: 5px; /* Opcional para dar un estilo más moderno */
+    border-radius: 5px; /* borde del hover */
 }
 
 main {
@@ -62,6 +62,7 @@ section {
     margin: 20px 0; /* Margen superior e inferior */
     border-radius: 5px; /* Bordes redondeados */
 }
+
 h2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5em;
@@ -78,50 +79,47 @@ aside {
     margin-top: 20px;
     border-radius: 5px;
     text-align: center;
+    
 }
 
-/* Estilo general de la lista de productos */
-.producto-list {
-    display: flex;             /* Usamos flexbox */
-    flex-wrap: wrap;           /* Permite que los productos se acomoden en varias filas */
-    gap: 20px;                 /* Espacio entre las tarjetas */
-    padding: 0;
-    list-style-type: none;
+#lista-productos {
+    display: grid; /* Activa Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas adaptativas */
+    gap: 16px; /* Espaciado entre los elementos */
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el padding por defecto de <ul> */
+    margin: 0 auto; /* Centra el contenedor si es más estrecho que la página */
 }
 
-  /* Estilo de cada tarjeta de producto */
-.producto-item {
-    width: 200px;              /* Ancho fijo de la tarjeta */
-    flex-direction: column;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
+#lista-productos li {
+    background: #f9f9f9; /* Fondo de los productos */
+    padding: 16px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Bordes suaves */
+    border-radius: 8px; /* Esquinas redondeadas */
+    text-align: center; /* Centra el texto dentro de cada producto */
 }
 
-  /* Estilo de las imágenes dentro de las tarjetas */
-.producto-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+#lista-productos img {
+    max-width: 100%; /* Ajusta las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 8px; /* redondea las esquinas de las imágenes */
 }
 
-  /* Títulos y precios */
-.producto-item h2 {
+#lista-productos h2 {
+    font-size: 1.2em; /* Tamaño del título */
     margin: 10px 0;
-    color: rgb(70, 66, 66);
+    color: #383732;
 }
-.producto-item p {
-    font-weight: bold;
-    color: brown;
+
+#lista-productos p {
+    font-size: 1em;
+    color: #555;
 }
 
 #reviews {
     padding: 20px;
     background-color: #f9f9f9;
-    display: grid; /* Usamos Grid solo para las reseñas */
+    display: grid; /* Grid para las reseñas */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Las reseñas se distribuyen en columnas */
     gap: 20px; /* Espacio entre las reseñas */
 }
@@ -182,7 +180,7 @@ label {
 }
 
 input[type="email"]:hover {
-    background-color: #f1f1bd; /* Color del botón al pasar el ratón */
+    background-color: #f1f1bd; /* Color del botón al pasar el mouse */
 }
 
 textarea {
@@ -198,11 +196,11 @@ button {
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor en forma de mano */
+    cursor: pointer; /* Puntero en forma de manito */
 }
 
 button:hover {
-    background-color: #555; /* Color del botón al pasar el ratón */
+    background-color: #555; /* Color del botón al pasar el mouse */
 } 
 
 .contacto-contenedor {
@@ -222,7 +220,6 @@ button:hover {
     flex: 1 1 50%; /* Ocupa el 50% del ancho disponible */
     flex-wrap: wrap;
     box-sizing: border-box;  
-    
 }
 
 .contacto-info {
@@ -235,7 +232,6 @@ button:hover {
     border-radius: 5px; /* Bordes redondeados */
     color: #333333;
     margin-top: 20px;
-    
 }
 footer {
     background-color: #333;

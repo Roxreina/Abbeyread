@@ -37,7 +37,7 @@
             </aside>
         </section>
 
-        <section id="productos">
+        <section id="productos" class="caja-productos" >
             <h2>Nuestros Productos</h2>
             <div class="producto-list">
                 
@@ -46,7 +46,7 @@
 <ul id="lista-productos" class = "producto-item"></ul>
 
 <script>
-    // Definimos los productos directamente en el script
+    // Defino los productos en el script
     const productos = [
     { nombre: "Cuaderno Brotes", imagen: "img/cuaderno1.jpg", precio: 9600 },
     { nombre: "Cuaderno Horizonte", imagen: "img/cuaderno2.jpg", precio: 9400 },
@@ -54,10 +54,10 @@
     { nombre: "Agenda de bolsillo", imagen: "agenda-bolsillo.jpg", precio: 7200 }
     ];
 
-    // Obtenemos la lista del DOM
+    // Obtengo la lista del DOM
     const lista = document.getElementById('lista-productos');
 
-    // Generamos el HTML dinámicamente
+    // Genero el HTML dinámicamente
     productos.forEach(producto => {
     const item = document.createElement('li');
     item.innerHTML = `
@@ -90,9 +90,8 @@
             <div class="review">
                 <p class="customer-name">Felipe Criba</p>
                 <p class="review-text">Muy buena encuadernacion y excelente packaging.</p>
-                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="rating">⭐⭐⭐⭐</div>
             </div>
-            <!-- Aquí puedes agregar más reseñas -->
         </section>
 
         <section id="sobre-nosotros" >
@@ -123,8 +122,6 @@
                 </div>
             </div>
         </section>
-        
-        
     </main>
 
     <footer>
