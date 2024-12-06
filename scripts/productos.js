@@ -1,5 +1,5 @@
 
-    // Definimos los productos directamente en el script
+    // Defino los productos directamente en el script
     const productos = [
       { nombre: "Cuaderno A5", imagen: "cuaderno-a5.jpg", precio: 1500 },
       { nombre: "Cuaderno A4", imagen: "cuaderno-a4.jpg", precio: 2000 },
@@ -7,10 +7,10 @@
       { nombre: "Agenda de bolsillo", imagen: "agenda-bolsillo.jpg", precio: 1200 }
     ];
 
-    // Obtenemos la lista del DOM
+    // Obtengo la lista del DOM
     const lista = document.getElementById('lista-productos');
 
-    // Generamos el HTML dinámicamente
+    // Genero el HTML dinámicamente
     productos.forEach(producto => {
       const item = document.createElement('li');
       item.innerHTML = `
@@ -21,8 +21,3 @@
       lista.appendChild(item);
     });
 
-    // También mostramos en la consola
-    productos.forEach(producto => {
-      console.log(`Nombre: ${producto.nombre}, Precio: $${producto.precio}`);
-    });
- 

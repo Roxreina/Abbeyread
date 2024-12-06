@@ -1,0 +1,25 @@
+{
+    "reviews": [
+      {
+        "name": "Juan Pérez",
+        "review": "¡Me encanta este cuaderno! La calidad del papel es increíble y es perfecto para escribir todo el día.",
+        "rating": 5
+      },
+      {
+        "name": "Ana García",
+        "review": "Excelente producto. Lo recomiendo a todos los que buscan algo único.",
+        "rating": 4
+      },
+      {
+        "name": "Carlos López",
+        "review": "¡Producto increíble y entregado rápidamente!",
+        "rating": 5
+      },
+      {
+        "name": "Felipe Criba",
+        "review": "Muy buena encuadernacion y excelente packaging.",
+        "rating": 4
+      }
+    ]
+  }
+  
