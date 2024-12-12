@@ -116,6 +116,63 @@ aside {
     color: #555;
 }
 
+.boton-agregar {
+    background-color: #8BC34A; /* Color principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+    background-color: #577c2f; /* Tono para hover */
+}
+
+#carrito {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #35724d;
+    border-radius: 8px;
+  }
+
+  #carrito h2 {
+    margin-bottom: 10px;
+  }
+
+  #lista-carrito {
+    list-style: none;
+    padding: 0;
+  }
+
+  #lista-carrito li {
+    margin-bottom: 10px;
+  }
+
+  #total {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .boton-eliminar {
+    background-color: #FF5722; /* Color principal para eliminar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-eliminar:hover {
+    background-color: #E64A19; /* Tono superior para hover */
+  }
+  
 #reviews {
     padding: 20px;
     background-color: #f9f9f9;
