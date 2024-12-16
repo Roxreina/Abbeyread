@@ -83,7 +83,7 @@ aside {
 }
 
 #lista-productos {
-    display: grid; /* Activa Grid Layout */
+    display: grid; /* Activa Grid */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas adaptativas */
     gap: 16px; /* Espaciado entre los elementos */
     list-style: none; /* Elimina los puntos de las listas */
@@ -261,8 +261,8 @@ button:hover {
 } 
 
 .contacto-contenedor {
-    display: flex; /* Habilita el uso de flexbox */
-    flex-wrap: wrap; /* Permite que los elementos se reubiquen si no caben */
+    display: flex; 
+    flex-wrap: wrap; /* Permite que los elementos se pongan en fila */
     gap: 20px; /* Espacio entre los elementos */
     justify-content: space-between; /* Espaciado entre las columnas */
     margin: 20px 0; /* Margen superior e inferior */
@@ -273,7 +273,7 @@ button:hover {
 }
 
 .contacto-formulario {
-    display: flex; /* Contenedor flexible para el formulario y la info */
+    display: flex; /* Para el formulario y la info */
     flex: 1 1 50%; /* Ocupa el 50% del ancho disponible */
     flex-wrap: wrap;
     box-sizing: border-box;  

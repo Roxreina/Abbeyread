@@ -36,86 +36,18 @@
                 <p>Obtén un 10% de descuento en tu primera compra usando el código <strong>BIENVENIDA10</strong></p>
             </aside>
         </section>
-
         <section id="productos" class="caja-productos" >
             <h2>Nuestros Productos</h2>
-            <div class="producto-list">
-                
-
-                <section>
-                    <ul id="lista-productos"></ul>
-                    <div id="carrito">
-                    <h2>Carrito de compras </h2>
-                    <ul id="lista-carrito"></ul>
-                    <p id="total">Total: $0</p>
-                    </div>
-                </section>
-<ul id="lista-productos" class = "producto-item"></ul>
-
-<script>
-    // Defino los productos en el script
-    const productos = [
-    { nombre: "Cuaderno Brotes", imagen: "img/cuaderno1.jpg", precio: 9600 },
-    { nombre: "Cuaderno Horizonte", imagen: "img/cuaderno2.jpg", precio: 9400 },
-    { nombre: "Cuaderno Pinky", imagen: "img/cuaderno3.jpg", precio: 8500 },
-    { nombre: "Agenda de bolsillo", imagen: "agenda-bolsillo.jpg", precio: 7200 }
-    ];
-
-    const lista = document.getElementById('lista-productos');
-    const listaCarrito = document.getElementById('lista-carrito');
-    const totalElement = document.getElementById('total');
-    let total = 0;
-
-    // Genero el HTML dinámicamente
-    productos.forEach((producto, index) => {
-    const item = document.createElement('li');
-    item.innerHTML = `
-        <img src="${producto.imagen}" alt="${producto.nombre}">
-        <h2>${producto.nombre}</h2>
-        <p>Precio: $${producto.precio}</p>
-        <button class="boton-agregar" data-index="${index}">Agregar al carrito</button>
-    `;
-    lista.appendChild(item);
-    });
-
-    // Evento para manejar el carrito
-    lista.addEventListener('click', (e) => {
-    if (e.target.classList.contains('boton-agregar')) {
-        const index = e.target.getAttribute('data-index');
-        const producto = productos[index];
-
-        // Agregar producto al carrito
-        const itemCarrito = document.createElement('li');
-        itemCarrito.innerHTML = `
-        ${producto.nombre} - $${producto.precio}
-        <button class="boton-eliminar" data-precio="${producto.precio}">Eliminar</button>
-        `;
-        listaCarrito.appendChild(itemCarrito);
-
-        // Actualizar total
-        total += producto.precio;
-        totalElement.textContent = `Total: $${total}`;
-    }
-    });
-
-    // Evento para eliminar productos del carrito
-    listaCarrito.addEventListener('click', (e) => {
-    if (e.target.classList.contains('boton-eliminar')) {
-        const precio = parseInt(e.target.getAttribute('data-precio'));
-        
-        // Eliminar el producto del DOM
-        e.target.parentElement.remove();
-
-        // Actualizar total
-        total -= precio;
-        totalElement.textContent = `Total: $${total}`;
-    }
-    });
-</script>
-
-
-
-        </div>
+                <div class="producto-list">     
+                    <section>
+                        <ul id="lista-productos"></ul>
+                        <div id="carrito">
+                        <h2>Carrito de compras </h2>
+                        <ul id="lista-carrito"></ul>
+                        <p id="total">Total: $0</p>
+                        </div>
+                    </section>
+                </div>
         </section>
         <section id="reviews">
             <h2>Nuestros clientes</h2>
@@ -139,15 +71,14 @@
                 <p class="review-text">Muy buena encuadernacion y excelente packaging.</p>
                 <div class="rating">⭐⭐⭐⭐</div>
             </div>
-        </section>
-
+        </section>        
         <section id="sobre-nosotros" >
             <div class="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <article>
-                <p>Somos una pequeña empresa dedicada a la fabricación de cuadernos artesanales utilizando técnicas tradicionales y materiales sostenibles. Cada cuaderno es único y hecho con especial cuidado para ofrecer un producto de alta calidad.</p>
-            </article>
-        </div>
+                <h2>Sobre Nosotros</h2>
+                <article>
+                    <p>Somos una pequeña empresa dedicada a la fabricación de cuadernos artesanales utilizando técnicas tradicionales y materiales sostenibles. Cada cuaderno es único y hecho con especial cuidado para ofrecer un producto de alta calidad.</p>
+                </article>
+            </div>
         </section>
         <section id="formulario-contacto" class="contacto-contenedor">
                 <div class="contacto-formulario">
@@ -163,14 +94,12 @@
         
                     <button type="submit">Enviar</button>
                 </form>
-                
                 <div class="contacto-info">
                     <p>¡Estamos aquí para ayudarte! Si tienes preguntas sobre nuestros cuadernos artesanales, no dudes en contactarnos. Nuestro equipo está listo para responder cualquier consulta que puedas tener. Ya sea que necesites información sobre nuestros productos, precios o disponibilidad, estaremos encantados de asistirte. Esperamos tu mensaje y agradecemos tu interés en nuestros cuadernos.</p>
                 </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer-contenedor">
         <section id="contacto">
@@ -188,5 +117,6 @@
         </div>
         <p class="copyright">&copy; <time datetime="2024">2024</time> Abbeyreadcuadernos. Todos los derechos reservados.</p>
     </footer>
+    <script src="productos.js"></script>
 </body>
 </html>
